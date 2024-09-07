@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monthly Wager Race Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.webp" alt="Streamer's Logo" class="logo animated-logo">
+            <h1>Monthly Wager Race Leaderboards</h1>
+            <p>Over $5000 in Prizes every month for users under code <strong>Nahoule82</strong></p>
+            <a href="https://metamedialinks.com/eef139066" class="signup-link" target="_blank">Sign up now on Metaspins</a>
+        </header>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown">
+            <h2>Time Remaining for This Month’s Leaderboard</h2>
+            <div id="countdown-timer">
+                <span id="days">00</span> Days 
+                <span id="hours">00</span> Hours 
+                <span id="minutes">00</span> Minutes 
+                <span id="seconds">00</span> Seconds
+            </div>
+        </section>
+
+        <section class="leaderboard">
+            <h2>Current Standings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Wager</th>
+                        <th>Prize</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- JavaScript will insert rows dynamically here -->
+                </tbody>
+            </table>
+        </section>
+
+
+    </div>
+
+    <script src="leaderboard.js"></script>
+    <script src="countdown.js"></script>
+</body>
+</html>

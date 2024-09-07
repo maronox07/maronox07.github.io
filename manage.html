@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage Leaderboard</title>
+    <link rel="stylesheet" href="manage-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manage Leaderboard</h1>
+            <p>Add or delete users from the leaderboard. The list will be automatically ranked based on wagers.</p>
+        </header>
+
+        <section class="form-section">
+            <form id="leaderboard-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="wager">Wager ($):</label>
+                <input type="number" id="wager" name="wager" required>
+
+                <button type="submit">Add/Update User</button>
+            </form>
+        </section>
+
+        <section class="leaderboard-display">
+            <h2>Current Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Wager</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Leaderboard rows will be generated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>Automatically ranked based on wager. You can remove a user by clicking "Delete".</p>
+        </footer>
+    </div>
+
+    <script src="manage.js"></script>
+</body>
+</html>
